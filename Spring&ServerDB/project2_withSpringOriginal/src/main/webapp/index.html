@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring MVC testing</title>
+</head>
+<body>
+    <h2>Testing only</h2>
+    
+    <br>
+
+    <form method="POST" action="getProfileById.do">
+    getProfileById
+    <input type="submit" placeholder="fetch"/>
+    <input type="number" name="id" placeholder="id"/>
+    
+    </form>
+    <form method="POST" action="login.do">
+        <h4>log in</h4>
+        <input type="text" name="username" placeholder="username"/>
+        <input type="password" name="password" placeholder="password"/>
+        <input type="submit" placeholder="log in"/>
+    </form>
+    
+    <br>
+       
+    <form method="POST" action="signup.do">
+        <h4>sign up</h4>
+        <input type="text" name="username" placeholder="username"/>
+        <input type="password" name="password" placeholder="password"/>
+        <input type="text" name="firstname" placeholder="firstname"/>
+        <input type="text" name="lastname" placeholder="lastname"/>
+        <input type="text" name="email" placeholder="email"/>
+        <input type="submit" placeholder="sign up"/>
+    </form>
+    
+</body>
+</html>
