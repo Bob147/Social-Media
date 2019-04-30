@@ -1,0 +1,11 @@
+<div class="profile-view">
+  <h1>{{curUserProfile.firstName+ " "+ curUserProfile.lastName}}</h1>
+  <p class="desc">{{"gender: "+ curUserProfile.gender}}<br>
+      {{ "birthdate: "+ curUserProfile.birthdate}}<br>
+      {{"occupation: "+ curUserProfile.occupation}}<br>
+      {{"relationshipStatus: "+ curUserProfile.relationshipStatus}}<br>
+      {{"currentStatus: "+ curUserProfile.currentStatus}}<br>
+      {{"hobbies: "+ curUserProfile.hobbies}}<br>
+      {{"aboutMe: "+ curUserProfile.aboutMe}}</p>
+  <button type="button" class="btn btn-outline-dark" (click) ="forward()">{{buttonValue}}</button>
+</div>

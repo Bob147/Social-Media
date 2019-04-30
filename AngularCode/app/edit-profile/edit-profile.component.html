@@ -1,0 +1,124 @@
+<app-search-nav></app-search-nav>
+        <div class="container">
+    
+    
+            <h1>Edit Profile</h1>
+            <hr>
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img [src]="myImageUrl" class="avatar img-circle" alt="avatar" width="150px" height="150px" >
+                        <h6>Upload a different photo...</h6>
+    
+                        <input #imgFileIn type="file" (change)="selectFile($event)" class="form-control">
+                    </div>
+                </div>
+    
+                <!-- edit form column -->
+                <div class="col-md-9 personal-info moveform">
+                    <!-- <div class="alert alert-info alert-dismissable">
+                  <a class="panel-close close" data-dismiss="alert">×</a>
+                  <i class="fa fa-coffee"></i> This is an <strong>.alert</strong>. Use this to show important messages to the user.
+              </div> -->
+                    <h3>Personal info</h3>
+    
+                    <div class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">First name:</label>
+                            <div class="col-lg-8">
+                                <input #firstname class="form-control" type="text" [value]="profile.firstname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Last name:</label>
+                            <div class="col-lg-8">
+                                <input #lastname class="form-control" type="text" [value]="profile.lastname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Gender:</label>
+                            <div class="col-lg-8">
+                                <input #gender class="form-control" type="text" placeholder="Gender">
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Birth Date:</label>
+                            <div class="col-lg-8">
+                                    <input #birthdate type="date" id="start" name="trip-start"
+                                    value="2018-07-22"
+                                    min="2018-01-01" max="2018-12-31">
+                                <!-- <input #birthdate class="form-control" type="date" value="birthdate"> -->
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Occupation:</label>
+                            <div class="col-lg-8">
+                                <input #occupation class="form-control" type="text" placeholder="Where do you work?">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Relationship Status:</label>
+                            <div class="col-lg-8">
+                                <input #rstatus class="form-control" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label class="col-lg-3 control-label">Current Status:</label>
+                                <div class="col-lg-8">
+                                    <input #cstatus class="form-control" type="text" placeholder="im so sad">
+                                </div>
+                            </div>
+    
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Hobbies:</label>
+                            <div class="col-md-8">
+                                <input #hobbies class="form-control" type="text" placeholder="Hobbies">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">About Me:</label>
+                            <div class="col-md-8">
+                                <input #aboutme class="form-control" type="text" placeholder="something unique about you">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-8">
+                                <input type="button" (click)="editProfile()" class="btn btn-primary" value="Save Changes">
+                                <span></span>
+                                <input type="reset" class="btn btn-default" value="Cancel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Change Password:</label>
+            <div class="col-md-8">
+                enter old password:
+                <input #oldPass class="form-control" type="password" value="11111122333">
+            </div>
+            <div class="col-md-8">
+                enter new password:
+                <input #newPass class="form-control" type="password" value="11111122333">
+            </div>
+            <div class="col-md-8">
+                confirm new password:
+                <input #newPass2 class="form-control" type="password" value="11111122333">
+            </div>
+            <div class="col-md-8">
+                    <input type="button" (click)="changePassword()" class="btn btn-primary" value="Submit">
+                </div>
+                
+                <br><br><br><br><br><br><hr>
+        </div>
+        
+        <app-footer></app-footer>
+
+<!--
+  Reference code = https://www.bootply.com/sY7gQy6XF7 -->

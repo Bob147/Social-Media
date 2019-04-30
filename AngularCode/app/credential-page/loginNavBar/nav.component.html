@@ -1,0 +1,23 @@
+<!-- Bootstrap is responsive, meaning the nature of the nav changes depending on the size of the device's screen that is viewing.
+Having the navbar-expand-lg prevents it from appearing as the mobile toggle version of the navbar. (Resize your browser to view this)
+Not sure what the navbar-dark indigo does, but I believe it helps remove the hyperlink styling from "ABOWLT". -->
+<nav class="navbar navbar-expand-lg navbar-dark indigo">
+    <a class="navbar-brand" href="#">ABOWLT</a>
+
+    <!--  -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+
+            <!-- This is maintaining the space between the "ABOWLT" and the login.  -->
+
+        </ul>
+        <div> 
+            <input #nameInput type="text" name="username" placeholder="username" >
+            <input #pswInput type="password" name="password" placeholder="password">
+            <input type="button" (click)="login()" value="login">
+        </div> 
+    </div>
+</nav>

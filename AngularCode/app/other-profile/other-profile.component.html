@@ -1,0 +1,19 @@
+<app-search-nav></app-search-nav>
+<app-cover-img [curUserProfile]="curPageUser"></app-cover-img>
+<div class="container">
+  <div class="row">
+    <div class="col" id="user-profile">
+      <app-side-profile [curUserProfile]="curPageUser"></app-side-profile>
+    </div>
+    <div class="col-6">
+      <app-send-post></app-send-post>
+      <br><br>
+      <app-other-post></app-other-post>
+    </div>
+    <div class="col order-12" id="friends">
+      <app-friends-list></app-friends-list>
+     </div>
+
+</div>
+<app-footer></app-footer>
+

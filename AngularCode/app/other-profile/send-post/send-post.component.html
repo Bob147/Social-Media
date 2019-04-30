@@ -1,0 +1,9 @@
+<div class= "create-new" *ngIf="show; else notshow">
+    <div class="new-post">
+        <textarea #content id="message" type="text" name="message" rows="8" cols="65">Send a Post on your friend's timeline! </textarea>
+        <input type="file" (change)="selectFile($event)" value="fileupload" id="fileupload"> <br>
+        <button (click)="addPost(content.value)" class="btn btn-secondary btn-sm">Send</button>
+
+    </div>
+  </div>
+  <ng-template #notshow ><div class= "create-new"><p>You have to be a friend of the person in order to write on their timeline</p></div></ng-template>

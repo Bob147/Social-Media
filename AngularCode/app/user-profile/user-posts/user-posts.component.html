@@ -1,0 +1,21 @@
+<div class="feed">
+  <ul>
+      <li *ngFor = 'let temp of posts; index as i'>
+          <div class="container">
+              <h5><img *ngIf="temp.sender.profileImageUrl; else elseBlock" [src]="temp.sender.profileImageUrl" class="pro-pic" width="60" height="45">
+                <ng-template #elseBlock><img [src]="profilePicWhenNotSpecified"class="pro-pic" width="60" height="45"></ng-template>
+              <p>{{temp.sender.firstName+" "+temp.sender.lastName}}</p><p *ngIf="temp.sender.profileId!=temp.receiver.profileId" style="color:rgb(26, 32, 123)" (click)="goToThisProfile(temp.receiver)">
+                  {{" @"+temp.receiver.firstName+" "+temp.receiver.lastName}}</p></h5>   
+            {{temp.contents}}
+              <img *ngIf="temp.image_url" [src]="temp.image_url" alt="Girl in a jacket" width="465" height="600">   
+            <p><button class="btn btn-secondary btn-sm" (click)="toLikeOrUnlikePost(i)" >
+              
+              {{isLiked[i]? 'dislike':'like'}}</button> {{likeCount[i].likeCount+" likes"}}
+            
+            </p>
+            {{temp.timestamp}}
+    
+          </div><br><hr>
+        </li>
+      </ul>
+    </div>

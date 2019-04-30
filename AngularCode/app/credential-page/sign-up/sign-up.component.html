@@ -1,0 +1,66 @@
+
+<div style="text-align:center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+                <div class="content">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input #emailInput type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">First Name</label>
+                        <input #firstName type="text" class="form-control" placeholder="Enter First Name">
+                        <label for="exampleInputPassword1">Last Name</label>
+                        <input #lastName type="text" class="form-control" placeholder="Enter Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Username</label>
+                        <input #userName type="username" class="form-control" id="exampleInputPassword1" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input #passWord type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <button (click)="signUp()">Sign Up!</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+<div style="text-align:center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                    <div class="content">
+Forgot Password?
+<div class="form-group">
+        <label for="exampleInputUsername">Username</label>
+        <input #userNameForReset type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+        <small id="emailHelp" class="form-text text-muted">please enter your user name</small>
+    </div>
+        <button (click)="resetPassword()">Reset Password</button>
+    </div>
+
+
+</div>
+
+</div>
+</div>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <hr>

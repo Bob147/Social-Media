@@ -1,0 +1,17 @@
+
+
+  <div class= "create-new">
+
+    <div class="new-post">
+        <textarea #content id="message" type="text" name="message" rows="8" cols="65">What's on your mind ...try to input user name</textarea>
+        <input type="file" (change)="selectFile($event)" value="fileupload" id="fileupload"> <br>
+        <button (click)="addPost(content.value)" class="btn btn-secondary btn-sm">Post</button>
+        
+  
+  
+    </div>
+
+  </div>
+
+  
+

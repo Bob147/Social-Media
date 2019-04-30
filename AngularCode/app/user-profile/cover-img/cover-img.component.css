@@ -1,0 +1,22 @@
+.containerPic{
+    width: 100%;
+    background: url("http://www.mansourcartoon.ae/img/sky.jpg");
+    background-size: 100% 100%;
+    object-fit: fill;
+    height: 400px;
+    background-repeat: no-repeat;
+    max-height: 400px; 
+} 
+
+#proPic{
+    z-index: 2;
+    height: 320px;
+    width: 280px;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: -50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    top: 35%;
+
+}

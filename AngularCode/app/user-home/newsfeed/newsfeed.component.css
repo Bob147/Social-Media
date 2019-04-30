@@ -1,0 +1,25 @@
+.feed {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    bottom: 600px;
+    background-color: rgba(	254,251,247,0.844);
+    border-radius: 5px;
+    border-width: 20%; 
+    padding: 5%;
+}
+
+.container{
+    display: inline-block;
+    position: relative;
+}
+
+ /* image{
+     current this code below doesn't appear to do anything except the width does make it 
+    wider but only on the right hand side. 
+    position: center; 
+    width: 110%; 
+} */
+
+.pro-pic{
+    border-radius: 50%;
+    width: 10%;
+}
